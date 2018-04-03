@@ -1,8 +1,4 @@
-// function testNotepadSave() {
-//   var notepad = new Notepad();
-//   notepad.saveNote()
-//   assert.isTrue(notepad.notes !== 0);
-// };
+
 
 function testNotepadCreate() {
   var notepad = new Notepad();
@@ -11,3 +7,11 @@ function testNotepadCreate() {
 };
 
 testNotepadCreate();
+
+function testNotepadSave() {
+  var notepad = new Notepad();
+  notepad.saveNote(new Note)
+  assert.isTrue(notepad._notes.length === 1);
+};
+
+testNotepadSave()
