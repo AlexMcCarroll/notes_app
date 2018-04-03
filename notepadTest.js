@@ -1,5 +1,3 @@
-
-
 function testNotepadCreate() {
   var notepad = new Notepad();
 
