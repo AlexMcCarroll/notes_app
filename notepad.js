@@ -3,10 +3,9 @@
     this._notes = []
   };
     Notepad.prototype.createNote = function() {
-      var note = new Note()
-      return note
+      return new Note()
     }
-    Notepad.prototype.saveNote = function(note) {
+    Notepad.prototype.saveNote = function(note) { 
       this._notes.push(note);
     }
   exports.Notepad = Notepad;

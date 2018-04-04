@@ -6,14 +6,32 @@
     <script src='noteTest.js'></script>
     <script src='notepad.js'></script>
     <script src='notepadTest.js'></script>
-    <link href='style.css' rel="text/css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
     <script>
-      var notepad = new Notepad()
+    var noteNumber=1;
+    var notepad = new Notepad()
+
+    function createNote(){
+
+    var newNote = notepad.createNote();
+    newNote.text = document.getElementById("note").value
+
+    if(sessionStorage.notes)
+    {
+     notes = JSON.parse(sessionStorage.getItem('notes'));
+    }else{
+     notes =[];
+    }
+    notes.push(newNote)
+    sessionStorage.setItem('notes', JSON.stringify(notes));
+    noteNumber++;
+    }
+
     </script>
+
       <style type="text/css">
         textarea {
           background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
@@ -25,9 +43,10 @@
           border: solid 1px #ddd;
           }
       </style>
-    <textarea>
-      TEXT
-      TEXT
-    </textarea>
+    <form>
+      <textarea id="note">
+      </textarea>
+      <button type="button" onclick="createNote()">Save</button>
+    </form>
   </body>
 </html>

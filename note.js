@@ -1,4 +1,5 @@
-function Note() {
+(function(exports) {
+  function Note() {
   this._text = ''
 };
   Note.prototype.writeNote = function(text) {
@@ -12,3 +13,5 @@ function Note() {
   Note.prototype.display = function(note) {
     return this._text;
   }
+  exports.Note = Note;
+})(this);
