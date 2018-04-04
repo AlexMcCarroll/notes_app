@@ -11,44 +11,12 @@
     <script src='test/notepadTest.js'></script>
     <script src='test/createNewTest.js'></script>
 
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <script>
-    var noteNumber=1;
-    var notepad = new Notepad()
-
-    function createNote(){
-
-    var newNote = notepad.createNote();
-    newNote.text = document.getElementById("note").value
-
-    if(sessionStorage.notes)
-    {
-     notes = JSON.parse(sessionStorage.getItem('notes'));
-    }else{
-     notes =[];
-    }
-    notes.push(newNote)
-    sessionStorage.setItem('notes', JSON.stringify(notes));
-    noteNumber++;
-    console.log(notes);
-    }
-
-    </script>
-
-      <style type="text/css">
-        textarea {
-          background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
-          width: 600px;
-          height: 300px;
-          font: normal 14px verdana;
-          line-height: 25px;
-          padding: 2px 10px;
-          border: solid 1px #ddd;
-          }
-      </style>
     <form>
       <textarea id="note">
       </textarea>
