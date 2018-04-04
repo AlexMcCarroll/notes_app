@@ -1,8 +1,8 @@
 (function(exports) {
   function Notepad() {
     this._notes = []
-
   };
+
     Notepad.prototype.createNote = function() {
       return new Note()
     }

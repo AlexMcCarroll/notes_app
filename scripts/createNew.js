@@ -1,8 +1,8 @@
 "use strict";
 
 (function(exports) {
-function createNew(object) {
-  return new object;
+function createNewNotepad() {
+  return new Notepad;
 };
 
   exports.createNew = createNew;
