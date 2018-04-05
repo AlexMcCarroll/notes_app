@@ -11,6 +11,7 @@ function createLaunch() {
     img.onclick = function() {
       console.log(notepad);
       document.getElementById("notePadPics").style.visibility = "hidden";
+      document.getElementById("createNotepad").style.visibility = "hidden";
     }
     document.getElementById("notePadPics").appendChild(img);
   }
