@@ -6,9 +6,12 @@
     <script src='scripts/note.js'></script>
     <script src='scripts/notepad.js'></script>
     <script src='scripts/createNew.js'></script>
+    <script src='scripts/launch.js'></script>
+    <script src='views/home.js'></script>
     <script src='views/noteScript.js'></script>
     <script src='test/notepadTest.js'></script>
     <script src='test/createNewTest.js'></script>
+    <script src='test/launchTest.js'></script>
 
 
     <link rel="stylesheet" href="style.css">
@@ -18,6 +21,9 @@
   </head>
   <body>
     <button type="button" onclick="createNotepad()">Create Notepad</button>
+    <div class="notePadPics" onload="createLaunch()">
+    </div>
+
     <div id="empty-note">
     <form>
       <textarea id="note">
