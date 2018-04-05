@@ -13,3 +13,9 @@ function testLaunchInstance() {
 };
 
 testLaunchInstance();
+
+function testCreateNewNotepad() {
+  var launch = new Launch();
+  assert.isTrue(launch.createNewNotepad() instanceof Notepad);
+};
+testCreateNewNotepad();

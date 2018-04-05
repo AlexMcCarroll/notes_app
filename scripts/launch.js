@@ -17,6 +17,6 @@
     this._notepads.push(notepad)
     return notepad
   };
-  
+
   exports.Launch = Launch;
 })(this);
