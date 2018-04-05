@@ -5,5 +5,5 @@ function createNewNotepad() {
   return new Notepad;
 };
 
-  exports.createNew = createNew;
+  exports.createNewNotepad = createNewNotepad;
 })(this);

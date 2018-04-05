@@ -1,5 +1,5 @@
-function testCreateNew() {
+function testCreateNewNotepad() {
 
-  assert.isTrue(createNew(Note) instanceof Note);
+  assert.isTrue(createNewNotepad() instanceof Notepad);
 };
-testCreateNew();
+testCreateNewNotepad();
