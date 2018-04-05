@@ -1,7 +1,15 @@
 function testLaunchDummyData() {
-  assert.isTrue(launch._notePads.length) === 4;
+  var launch = new Launch();
+  launch.start();
+  assert.isTrue(launch.showNotepads().length === 4);
 };
 
+testLaunchDummyData();
+
 function testLaunchInstance() {
-  assert.isTrue(launch._notepads[0] instanceof Notepad);
+  var launch = new Launch();
+  launch.start();
+  assert.isTrue(launch.showNotepads()[0] instanceof Notepad);
 };
+
+testLaunchInstance();
