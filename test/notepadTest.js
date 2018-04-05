@@ -11,4 +11,5 @@ function testNotepadSave() {
   notepad.saveNote(new Note)
   assert.isTrue(notepad._notes.length === 1);
 };
+
 testNotepadSave()
