@@ -11,5 +11,12 @@
       this._notepads.push(new Notepad)
     };
   };
+
+  Launch.prototype.createNewNotepad = function() {
+    var notepad = new Notepad
+    this._notepads.push(notepad)
+    return notepad
+  };
+  
   exports.Launch = Launch;
 })(this);
