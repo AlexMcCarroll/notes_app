@@ -12,7 +12,7 @@ function createLaunch() {
       console.log(notepad);
       document.getElementById("notePadPics").style.visibility = "hidden";
     }
-    document.body.appendChild(img);
+    document.getElementById("notePadPics").appendChild(img);
   }
 };
 createLaunch();
