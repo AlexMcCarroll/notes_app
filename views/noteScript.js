@@ -11,7 +11,3 @@
 
   exports.createNote = createNote;
 })(this);
-
- function hideNotepad() {
-   document.getElementById("empty-note").style.visibility = "hidden";
- }

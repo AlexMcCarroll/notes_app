@@ -1,15 +1,10 @@
-function testNotepadCreate() {
-  var notepad = new Notepad();
-  assert.isTrue(notepad.createNote() instanceof Note);
-};
-
-testNotepadCreate();
-
-
-function testNotepadSave() {
-  var notepad = new Notepad();
-  notepad.saveNote(new Note)
-  assert.isTrue(notepad._notes.length === 1);
-};
-
-testNotepadSave()
+// let featureTests =
+[
+  {
+    describe: '#showing notes',
+    it: 'displays notes in the body',
+    test: function(){
+      return document.body.innerHTML.includes('Chiaki had a dream about Noelle')
+    }
+  }
+]

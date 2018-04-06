@@ -1,3 +1,7 @@
+'use strict';
+
+(function(exports) {
+
 var assert = {
   isTrue: function(assertionToCheck) {
     if (!assertionToCheck) {
@@ -5,3 +9,6 @@ var assert = {
     }
   }
 };
+
+  exports.assert = assert;
+})(this);

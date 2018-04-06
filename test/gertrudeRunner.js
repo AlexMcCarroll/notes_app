@@ -1,6 +1,4 @@
-let tests = featureTests;
-
 importHTMLbody('index.html')
-  .then(() => {
-  gertrude(tests)3
-})
+  .then(function(){
+    gertrude(featureTests)
+  });
