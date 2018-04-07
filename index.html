@@ -5,11 +5,17 @@
     <script src='src/createNotepad.js'></script>
     <script src='src/note.js'></script>
     <script src='src/notepad.js'></script>
+    <script src='src/launch.js'></script>
 
     <script src='test/assert.js'></script>
     <script src='test/notepadTest.js'></script>
     <script src='test/noteTest.js'></script>
+    <script src='test/createNewTest.js'></script>
+    <script src='test/launchTest.js'></script>
 
+    <script src='views/noteScript.js'></script>
+
+    <script src='views/home.js'></script>
     <script src='views/noteScript.js'></script>
 
     <link rel="stylesheet" href="style.css">
@@ -18,6 +24,10 @@
     <title></title>
   </head>
   <body>
+    <button type="button" onclick="createNotepad()">Create Notepad</button>
+    <div class="notePadPics" onload="createLaunch()">
+    </div>
+
     <div id="empty-note">
     <form>
       <textarea id="note">Chiaki had a dream about Noelle</textarea>

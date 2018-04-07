@@ -1,4 +1,4 @@
-importHTMLbody('index.html')
+importHTMLbody('../../index.html')
   .then(function(){
     gertrude(featureTests)
   });
