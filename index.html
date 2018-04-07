@@ -2,17 +2,21 @@
 <html>
   <head>
 
-    <script src='scripts/assert.js'></script>
-    <script src='scripts/note.js'></script>
-    <script src='scripts/notepad.js'></script>
-    <script src='scripts/createNew.js'></script>
-    <script src='scripts/launch.js'></script>
-    <script src='views/home.js'></script>
-    <script src='views/noteScript.js'></script>
+    <script src='src/createNotepad.js'></script>
+    <script src='src/note.js'></script>
+    <script src='src/notepad.js'></script>
+    <script src='src/launch.js'></script>
+
+    <script src='test/assert.js'></script>
     <script src='test/notepadTest.js'></script>
+    <script src='test/noteTest.js'></script>
     <script src='test/createNewTest.js'></script>
     <script src='test/launchTest.js'></script>
 
+    <script src='views/noteScript.js'></script>
+
+    <script src='views/home.js'></script>
+    <script src='views/noteScript.js'></script>
 
     <link rel="stylesheet" href="style.css">
 
@@ -26,8 +30,7 @@
 
     <div id="empty-note">
     <form>
-      <textarea id="note">
-      </textarea>
+      <textarea id="note">Chiaki had a dream about Noelle</textarea>
       <button type="button" onclick="createNote()">Save</button>
     </form>
   </div>
